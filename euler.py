@@ -3,7 +3,7 @@ import math
 def e_cuadratica(n):
     res = 0
     for i in range(n):
-    	res += 1 / math.fact(i)
+    	res += 1 / math.factorial(i)
     return res
 
 
