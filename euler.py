@@ -1,8 +1,15 @@
+import math
+
 def e_cuadratica(n):
-    # Implemente esta función
-    return 0
+    res = 0
+    for i in range(n):
+    	res += 1 / math.fact(i)
+    return res
 
 
 def e_lineal(n):
-    # Implemente esta función
-    return 0
+    factorial, res = 1, 0
+    for i in range(n):
+    	factorial *= n
+    	res += 1 / factorial
+    return res
